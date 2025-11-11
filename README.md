@@ -3,7 +3,7 @@
 
 ---
 
-⚙️ Pengertian Singkat
+**⚙️ Pengertian Singkat**
 
 OpenLiteSpeed (OLS) adalah versi open source dari LiteSpeed Web Server (LSWS) — sebuah web server modern yang dirancang agar super cepat, ringan, dan mudah diatur.
 Dia sering dibandingkan dengan Apache dan Nginx, karena fungsi utamanya sama: menyajikan konten web ke pengguna.
@@ -11,9 +11,9 @@ Dia sering dibandingkan dengan Apache dan Nginx, karena fungsi utamanya sama: me
 
 ---
 
-💪 Kelebihan OpenLiteSpeed
+#### 💪 Kelebihan OpenLiteSpeed
 
-1. 🚀 Performa Tinggi
+**1. 🚀 Performa Tinggi**
 
 Didesain dengan arsitektur event-driven asinkron, seperti Nginx, jadi lebih efisien menangani ribuan koneksi bersamaan tanpa membebani CPU dan RAM.
 
