@@ -9,9 +9,15 @@ ___
 **B. Instalasi OpenLiteSpeed (OLS)**
 
 Karena OLS memakai repo tambahan, pastikan server bisa internet. Setelah itu jalankan:
-1. > **Update & Upgrade Sistem**
-   > apt update && apt upgrade
 
+<div style="
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+">
+  Ini teks di dalam kotak putih.
+</div>
 
 2. Install utilitas penting
 ''' apt install wget curl '''
