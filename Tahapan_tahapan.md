@@ -24,7 +24,8 @@ Karena OLS memakai repo tambahan, pastikan server bisa internet. Setelah itu jal
 6. Jalankan dan aktifkan service OLS
   >- systemctl start lsws 
   >- systemctl enable lsws 
-C. Membuat Password Panel Admin
+
+**C. Membuat Password Panel Admin**
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 • Jalankan script:
 /usr/local/lsws/admin/misc/admpass.sh 
