@@ -142,5 +142,4 @@ Tapi panel seperti CyberPanel sudah mendukung OLS penuh dan gratis.
 - 👥 Komunitas	Sedang berkembang	Tidak sebesar Nginx/Apache.
 
 
-![Image](https://github.com/user-attachments/assets/8cb65833-592d-4816-a0c9-dbaeabce0389)
 
