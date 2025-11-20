@@ -87,13 +87,13 @@ Artinya, setiap kali file .htaccess diubah, kamu harus reload server agar peruba
 
 ### **2. 🧩 Fitur Enterprise Tidak Tersedia**
 
-- Beberapa fitur hanya ada di LiteSpeed Enterprise, seperti:
+  - Beberapa fitur hanya ada di LiteSpeed Enterprise, seperti:
 
-- HTTP/3 early access (kadang masih eksperimental di OLS)
+  - HTTP/3 early access (kadang masih eksperimental di OLS)
 
-- LSCache advanced (E-commerce, WooCommerce full cache)
+  - LSCache advanced (E-commerce, WooCommerce full cache)
 
-- Dukungan teknis resmi.
+  - Dukungan teknis resmi.
 
 
 
@@ -134,12 +134,12 @@ Tapi panel seperti CyberPanel sudah mendukung OLS penuh dan gratis.
 
 **Aspek	OpenLiteSpeed	Penjelasan**
 
-- ⚡ Performa	Sangat cepat	Cocok untuk traffic tinggi
-- 🔒 Keamanan	Kuat	Ada proteksi bawaan
-- 🧰 Kemudahan konfigurasi	Mudah lewat GUI	Tapi .htaccess harus reload
-- 💰 Lisensi	Gratis & Open Source	Tidak semua fitur Enterprise
-- 🌐 Kompatibilitas	Baik dengan Apache	Tapi tidak sepenuhnya
-- 👥 Komunitas	Sedang berkembang	Tidak sebesar Nginx/Apache.
+  - ⚡ Performa	Sangat cepat	Cocok untuk traffic tinggi
+  - 🔒 Keamanan	Kuat	Ada proteksi bawaan
+  - 🧰 Kemudahan konfigurasi	Mudah lewat GUI	Tapi .htaccess harus reload
+  - 💰 Lisensi	Gratis & Open Source	Tidak semua fitur Enterprise
+  - 🌐 Kompatibilitas	Baik dengan Apache	Tapi tidak sepenuhnya
+  - 👥 Komunitas	Sedang berkembang	Tidak sebesar Nginx/Apache.
 
 ___
 # Tutorial Instalasi OpenLiteSpeed (OLS)
@@ -204,17 +204,17 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 2. **Klik Add → pilih LiteSpeed SAPI App → Next**
 
 3. Isi:
-   - Name: **lsphp84**
-   - Address: 
+  - Name: **lsphp84**
+  - Address: 
    >-uds://tmp/lshttpd/lsphp.sock
-   - Notes: **PHP 8.4**
-   - Max Connections: **35**
-   - Initial Request Timeout: **60**
-   - Retry Timeout: **0**
-   - Persistent Connection: **Yes**
-   - Command:
+  - Notes: **PHP 8.4**
+  - Max Connections: **35**
+  - Initial Request Timeout: **60**
+  - Retry Timeout: **0**
+  - Persistent Connection: **Yes**
+  - Command:
    >-/usr/local/lsws/lsphp84/bin/lsphp
-   - Instances: **1 (default)**
+  - Instances: **1 (default)**
 
   **Save -> _Graceful Restart_**
 
