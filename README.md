@@ -180,6 +180,7 @@ ___
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 **1. Jalankan script:**
   >- /usr/local/lsws/admin/misc/admpass.sh 
+
 **2. Masukkan username (contoh: admin)**
 - Buat password
 - Buka panel admin di browser: http://ip-server:7080
@@ -187,8 +188,10 @@ Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 ___
 ## **D. Tes Halaman Default OLS**
 Buka browser dan ketik:
-http://ip-server:8088 
-Kalau tampil halaman default, berarti instalasi berhasil.
+1. http://ip-server:8088 
+   
+   Kalau tampil halaman default, berarti instalasi berhasil.
+
 E. Mengatur Versi PHP di OLS
 Untuk membuat OLS memakai PHP 8.4, lakukan pengaturan berikut:
 1. Konfigurasi External App
