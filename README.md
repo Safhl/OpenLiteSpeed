@@ -188,9 +188,9 @@ Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 ___
 ## **D. Tes Halaman Default OLS**
 Buka browser dan ketik:
-1. http://ip-server:8088 
-   
-   Kalau tampil halaman default, berarti instalasi berhasil.
+>- http://ip-server:8088 
+
+Kalau tampil halaman default, berarti instalasi berhasil.
 
 E. Mengatur Versi PHP di OLS
 Untuk membuat OLS memakai PHP 8.4, lakukan pengaturan berikut:
