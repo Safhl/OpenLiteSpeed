@@ -174,9 +174,9 @@ ___
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 1. Jalankan script:
   >- /usr/local/lsws/admin/misc/admpass.sh 
-• Masukkan username (contoh: admin)
-• Buat password
-• Buka panel admin di browser:
+- Masukkan username (contoh: admin)
+- Buat password
+2. Buka panel admin di browser:
 http://ip-server:7080 
 D. Tes Halaman Default OLS
 Buka browser dan ketik:
