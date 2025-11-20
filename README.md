@@ -197,7 +197,7 @@ ___
 ## **E. Mengatur Versi PHP di OLS**
 Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk merubahnya ikuti tahapan beriku:
 
-**1. Konfigurasi External App**
+### **Konfigurasi External App**
 
 1. Di menu kiri pilih: Server Configuration → External App
 
@@ -217,6 +217,15 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
   - **Instances**: 1 (default)
 
   **Save** -> _Graceful Restart_
+
+### **Atur Script Handler**
+**1. Masih di menu kiri**: Server Configuration → Script Handler
+**2. Edit handler lsphp atau buat baru**:
+  - Suffixes: php
+  - Handler Type: LiteSpeed SAPI
+  - Handler Name: lsphp84
+
+**Save** → _Graceful Restart_
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
