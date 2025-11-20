@@ -287,8 +287,8 @@ Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat 
    - Domains: * **(artinya semua domain/IP)
 Save**
 5. Pada tab SSL → isi:
- - Private Key File: /etc/ssl/private/self.key
- - Certificate File: /etc/ssl/private/self.crt
+   - Private Key File: /etc/ssl/private/self.key
+   - Certificate File: /etc/ssl/private/self.crt
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
