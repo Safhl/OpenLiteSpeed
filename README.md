@@ -393,7 +393,25 @@ Untuk mengatasi kendala tersebut, solusi yang dilakukan adalah:
 - Bertanya saat menemukan langkah yang tidak jelas
 
 ## **🎯 Kesimpulan**
- 
+
+Dari seluruh proses instalasi, konfigurasi, serta pengelolaan file website pada OpenLiteSpeed (OLS), dapat disimpulkan bahwa server berhasil dijalankan dan dikonfigurasi dengan baik, mulai dari instalasi OLS, pengaturan PHP, perubahan port, penambahan SSL, hingga penggantian file tampilan web melalui WinSCP.
+
+Proses upload file dan penggantian halaman default juga berhasil, yang ditandai dengan berubahnya tampilan web sesuai file yang di-upload, menunjukkan bahwa struktur direktori, docroot, dan handler PHP sudah berjalan sebagaimana mestinya.
+
+Walaupun terdapat kendala berupa kurangnya pemahaman terhadap beberapa perintah, direktori, dan konfigurasi, hambatan tersebut dapat diatasi dengan memperdalam pemahaman, membaca dokumentasi, dan memastikan fungsi setiap perintah sebelum menjalankannya. Hal ini menjadi proses pembelajaran penting dalam memahami cara kerja web server, permission, dan manajemen file pada lingkungan Linux.
+
+Secara keseluruhan, kegiatan ini memberikan pemahaman yang lebih baik mengenai:
+
+- cara kerja OpenLiteSpeed,
+
+- struktur direktori server,
+
+- proses upload & deployment web,
+
+- serta pentingnya memahami setiap perintah sebelum digunakan.
+
+
+Dengan pengalaman ini, diharapkan pengelolaan server ke depannya dapat dilakukan dengan lebih percaya diri, terarah, dan efisien.
 
   
 
