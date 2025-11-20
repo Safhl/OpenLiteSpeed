@@ -200,6 +200,8 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
 1. Di menu kiri pilih: Server Configuration → External App
 
+2. Klik Add → pilih LiteSpeed SAPI App → Next
+
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
 • Name: lsphp84
