@@ -204,19 +204,19 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 2. Klik Add → pilih LiteSpeed SAPI App → Next
 
 3. Isi:
-  - **Name**: lsphp84
-  - **Address**: 
+  - **Name: lsphp84**
+  - **Address:** 
    >-uds://tmp/lshttpd/lsphp.sock
-  - **Notes**: PHP 8.4
-  - **Max Connections**: 35
-  - **Initial Request Timeout**: 60
-  - **Retry Timeout**: 0
-  - **Persistent Connection**: Yes
-  - **Command**: 
+  - **Notes: PHP 8.4**
+  - **Max Connections: 35**
+  - **Initial Request Timeout: 60**
+  - **Retry Timeout: 0**
+  - **Persistent Connection: Yes**
+  - **Command:** 
    >-/usr/local/lsws/lsphp84/bin/lsphp
-  - **Instances**: 1 (default)
+  - **Instances: 1 (default)**
 
-  **Save** -> _Graceful Restart_
+  **Save -> _Graceful Restart_**
 
 
 ### **Atur Script Handler**
@@ -235,10 +235,10 @@ ___
 Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai port 80 atau 443. Tenang aja, kita bisa ubah pengaturannya biar sama seperti web sungguhan! 🚀
 
 1. **Login ke panel admin** (http://ip-server:7080)
-2. Masuk ke Menu → Listeners → Default → Edit
-3. **Ganti Port**: 80
-4. Klik Save → Graceful Restart
-5. **Sekarang akses website di browser**: 👉             
+2. **Masuk ke Menu → Listeners → Default → Edit**
+3. **Ganti Port: 80**
+4. **Klik Save → Graceful Restart**
+5. **Sekarang akses website di browser: 👉**             
 >-http://ip-server
 
 ___
@@ -246,7 +246,7 @@ ___
 
 Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS, secara default yang bisa dibaca hanya index.html. Supaya website kita bisa menjalankan file index.php, kita perlu menambahkan sedikit pengaturan tambahan.
 
-1. **Login ke admin panel**: → http://ip-server:7080
+1. **Login ke admin panel**: → >-http://ip-server:7080
 2. Menu kiri → Virtual Hosts → Example → General
 3. **Cari bagian Index Files**
 4. **Biasanya isinya**: index.html
