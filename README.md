@@ -299,7 +299,14 @@ ___
 
 # **Cara Memindahkan Projek html Kedalam Server**
 
-p
+## **A. Cara Mengakses Server Menggunakan CMD (SSH)**
+
+- Gunakan perintah berikut untuk mengakses server:
+**ssh kahiang@<ipserver>**
+ 
+Catatan: Login sebagai root tidak diizinkan. Gunakan perintah sudo untuk setiap tindakan yang memerlukan hak akses root, misalnya:
+Install PHP: **sudo apt install php**
+Edit file: **sudo nano /var/www/html/index.php**
 
 
 
