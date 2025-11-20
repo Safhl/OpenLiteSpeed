@@ -178,6 +178,7 @@ ___
 ## **C. Membuat Password Panel Admin**
 
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
+
 **1. Jalankan script:**
   >- /usr/local/lsws/admin/misc/admpass.sh 
 
