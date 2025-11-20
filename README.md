@@ -218,7 +218,7 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
   **Save** -> _Graceful Restart_
 
-___
+
 ### **Atur Script Handler**
 **1. Masih di menu kiri**: Server Configuration → Script Handler
 
@@ -231,6 +231,7 @@ ___
 
 ___
 ## **F. Ubah Port 8088 → 80 🔄**
+
 Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai port 80 atau 443. Tenang aja, kita bisa ubah pengaturannya biar sama seperti web sungguhan! 🚀
 
 Login ke panel admin (http://ip-server:7080)
