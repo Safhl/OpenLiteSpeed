@@ -297,17 +297,28 @@ ___
 Jika semua langkah sudah berjalan dengan lancar, server kalian seharusnya sudah bisa diakses melalui _http://ip-server_ atau _https://ip-server_. Untuk mengubah tampilan halamannya, kalian bisa mengelola isi file yang ada di direktori **_/usr/local/lsws/Example/_**.
 ___
 
-# **Cara Memindahkan Projek html Kedalam Server**
+## **Cara Memindahkan Projek html Kedalam Server**
 
-## **A. Cara Mengakses Server Menggunakan CMD (SSH)**
+### **A. Cara Mengakses Server Menggunakan CMD (SSH)**
 
 - Gunakan perintah berikut untuk mengakses server:
 **ssh kahiang@<ipserver>**
  
-Catatan: Login sebagai root tidak diizinkan. Gunakan perintah sudo untuk setiap tindakan yang memerlukan hak akses root, misalnya:
+**Catatan**: Login sebagai root tidak diizinkan. Gunakan perintah sudo untuk setiap tindakan yang memerlukan hak akses root, misalnya:
 Install PHP: **sudo apt install php**
 Edit file: **sudo nano /var/www/html/index.php**
 
+### **Menggunakan WinSCP**
+Karena login sebagai root tidak diizinkan, akun kahiang perlu dikonfigurasi untuk menjalankan tugas root melalui WinSCP. Ikuti langkah berikut:
+
+1. Buka WinSCP.
+2. Masukkan:
+ - Host Name: Nama server (lihat tabel di atas).
+3. User: kahiang
+4. Password: Tanya ke KM.
+5. Klik Advanced → Environment → SFTP.
+Pada bagian SFTP Server, masukkan:
+**sudo /usr/lib/openssh/sftp-server**
 
 
 
