@@ -13,7 +13,7 @@ Dia sering dibandingkan dengan Apache dan Nginx, karena fungsi utamanya sama: me
 
 ### 💪 Kelebihan OpenLiteSpeed
 
-###**1. 🚀 Performa Tinggi**
+### **1. 🚀 Performa Tinggi**
 
 Didesain dengan arsitektur event-driven asinkron, seperti Nginx, jadi lebih efisien menangani ribuan koneksi bersamaan tanpa membebani CPU dan RAM.
 
