@@ -180,11 +180,11 @@ ___
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 
 **1. Jalankan script:**
-  >- /usr/local/lsws/admin/misc/admpass.sh 
+>- /usr/local/lsws/admin/misc/admpass.sh 
 
 **2. Masukkan username (contoh: admin)**
 - Buat password
-- Buka panel admin di browser: http://ip-server:7080
+- Buka panel admin di browser: >-http://ip-server:7080
 
 ___
 ## **D. Tes Halaman Default OLS**
@@ -199,35 +199,35 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
 ### **Konfigurasi External App**
 
-1. **Di menu kiri pilih: Server Configuration → External App**
+1. Di menu kiri pilih: **Server Configuration → External App**
 
 2. **Klik Add → pilih LiteSpeed SAPI App → Next**
 
-3. **Isi:**
-  - **Name: lsphp84**
-  - **Address:** 
+3. Isi:
+  - Name: **lsphp84**
+  - Address: 
    >-uds://tmp/lshttpd/lsphp.sock
-  - **Notes: PHP 8.4**
-  - **Max Connections: 35**
-  - **Initial Request Timeout: 60**
-  - **Retry Timeout: 0**
-  - **Persistent Connection: Yes**
-  - **Command:** 
+  - Notes: **PHP 8.4**
+  - Max Connections: **35**
+  - Initial Request Timeout: **60**
+  - Retry Timeout: **0**
+  - Persistent Connection: **Yes**
+  - Command:
    >-/usr/local/lsws/lsphp84/bin/lsphp
-  - **Instances: 1 (default)**
+  - Instances: **1 (default)**
 
   **Save -> _Graceful Restart_**
 
 
 ### **Atur Script Handler**
-**1. Masih di menu kiri**: Server Configuration → Script Handler
+1. Masih di menu kiri: **Server Configuration → Script Handler**
 
-**2. Edit handler lsphp atau buat baru**:
-  - Suffixes: php
-  - Handler Type: LiteSpeed SAPI
-  - Handler Name: lsphp84
+2. Edit handler lsphp atau buat baru:
+  - Suffixes: **php**
+  - Handler Type: **LiteSpeed SAPI**
+  - Handler Name: **lsphp84**
 
-**Save** → _Graceful Restart_
+**Save → _Graceful Restart_**
 
 ___
 ## **F. Ubah Port 8088 → 80 🔄**
@@ -236,9 +236,9 @@ Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai por
 
 1. **Login ke panel admin** (http://ip-server:7080)
 2. **Masuk ke Menu → Listeners → Default → Edit**
-3. **Ganti Port: 80**
+3. Ganti Port: **80**
 4. **Klik Save → Graceful Restart**
-5. **Sekarang akses website di browser: 👉**             
+5. Sekarang akses website di browser: 👉            
 >-http://ip-server
 
 ___
@@ -246,13 +246,13 @@ ___
 
 Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS, secara default yang bisa dibaca hanya index.html. Supaya website kita bisa menjalankan file index.php, kita perlu menambahkan sedikit pengaturan tambahan.
 
-1. **Login ke admin panel**: → >-http://ip-server:7080
-2. Menu kiri → Virtual Hosts → Example → General
-3. **Cari bagian Index Files**
-4. **Biasanya isinya**: index.html
-5. **Ubah jadi**: index.php, index.html
-6. **Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html**
-7. **Klik Save**
+1. Login ke admin panel: → >-http://ip-server:7080
+2. **Menu kiri → Virtual Hosts → Example → General**
+3. Cari bagian Index Files
+4. Biasanya isinya: **index.html**
+5. Ubah jadi: **index.php, index.html**
+6. Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html
+7. Klik Save
 
 ___
 ## **H. Membuat Self-Signed SSL 🔐**
@@ -275,17 +275,17 @@ Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat 
 
 ### **Menambahkan SSL/TSL di OLS**
 
-1. Login ke admin panel: → http://ip-server:7080
-2. Masuk menu: Listeners → Add → +
+1. Login ke admin panel: → **http://ip-server:7080**
+2. Masuk menu: **Listeners → Add → +**
 3. Isi dengan:
-   - Listener Name: SSL
-   - IP Address: ANY
-   - Port: 443
-   - Secure: Yes
+   - Listener Name: **SSL**
+   - IP Address: **ANY**
+   - Port: **443**
+   - Secure: **Yes**
 4. Pada bagian Virtual Host Mappings, Tambahkan:
-   - Virtual Host: Example (atau nama virtual host kamu)
-   - Domains: * (artinya semua domain/IP)
-Save
+   - Virtual Host: **Example (atau nama virtual host kamu)??
+   - Domains: * **(artinya semua domain/IP)
+Save**
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
