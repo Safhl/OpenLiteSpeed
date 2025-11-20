@@ -253,9 +253,6 @@ Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS
 5. Ubah jadi: **index.php, index.html**
 6. Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html
 7. Klik Save
-8. Pada tab SSL → isi:
- - Private Key File: /etc/ssl/private/self.key
- - Certificate File: /etc/ssl/private/self.crt
 
 ___
 ## **H. Membuat Self-Signed SSL 🔐**
@@ -286,9 +283,12 @@ Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat 
    - Port: **443**
    - Secure: **Yes**
 4. Pada bagian Virtual Host Mappings, Tambahkan:
-   - Virtual Host: **Example (atau nama virtual host kamu)??
+   - Virtual Host: **Example (atau nama virtual host kamu)**
    - Domains: * **(artinya semua domain/IP)
 Save**
+5. Pada tab SSL → isi:
+ - Private Key File: /etc/ssl/private/self.key
+ - Certificate File: /etc/ssl/private/self.crt
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
