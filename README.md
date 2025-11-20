@@ -218,6 +218,7 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
   **Save** -> _Graceful Restart_
 
+___
 ### **Atur Script Handler**
 **1. Masih di menu kiri**: Server Configuration → Script Handler
 
@@ -227,6 +228,16 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
   - Handler Name: lsphp84
 
 **Save** → _Graceful Restart_
+
+___
+## **F. Ubah Port 8088 → 80 🔄**
+Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai port 80 atau 443. Tenang aja, kita bisa ubah pengaturannya biar sama seperti web sungguhan! 🚀
+
+Login ke panel admin (http://ip-server:7080)
+Masuk ke Menu → Listeners → Default → Edit
+Ganti Port: 80
+Klik Save → Graceful Restart
+Sekarang akses website di browser: 👉 http://ip-server
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
