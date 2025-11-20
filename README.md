@@ -13,7 +13,7 @@ Dia sering dibandingkan dengan Apache dan Nginx, karena fungsi utamanya sama: me
 
 ### 💪 Kelebihan OpenLiteSpeed
 
-**1. 🚀 Performa Tinggi**
+###**1. 🚀 Performa Tinggi**
 
 Didesain dengan arsitektur event-driven asinkron, seperti Nginx, jadi lebih efisien menangani ribuan koneksi bersamaan tanpa membebani CPU dan RAM.
 
@@ -23,7 +23,7 @@ Bisa memproses PHP jauh lebih cepat karena menggunakan LiteSpeed SAPI (LSAPI), b
 
 ---
 
-**2. 🧠 Caching yang Kuat**
+###**2. 🧠 Caching yang Kuat**
 
 Memiliki LiteSpeed Cache (LSCache) bawaan sangat cepat dan bisa mempercepat situs WordPress, Joomla, atau Laravel secara drastis.
 
@@ -33,7 +33,7 @@ Tidak perlu plugin caching tambahan (beda dengan Apache atau Nginx).
 
 ---
 
-**3. 🔒 Keamanan Tinggi**
+###**3. 🔒 Keamanan Tinggi**
 
 Built-in Anti-DDoS, Brute Force Protection, dan reCAPTCHA Defense.
 
@@ -43,7 +43,7 @@ Mendukung mod_security rules (seperti Apache), jadi bisa pakai aturan keamanan y
 
 ---
 
-**4. ⚡ Kompatibilitas Apache**
+###**4. ⚡ Kompatibilitas Apache**
 
 Mendukung sebagian besar aturan .htaccess, mod_rewrite, dan mod_security.
 
@@ -53,7 +53,7 @@ Jadi, migrasi dari Apache ke OpenLiteSpeed cukup mudah.
 
 ---
 
-**5. 🎛️ Web GUI (Panel Admin)**
+###**5. 🎛️ Web GUI (Panel Admin)**
 
 Ada antarmuka web (WebAdmin Console) yang memudahkan konfigurasi virtual host, SSL, PHP, log, dan lainnya tanpa edit file manual.
 
@@ -63,7 +63,7 @@ Cocok buat pengguna yang belum terlalu nyaman dengan command line.
 
 ---
 
-**6. 🧩 Open Source & Gratis**
+###**6. 🧩 Open Source & Gratis**
 
 100% gratis dan open-source (tidak seperti versi komersial LiteSpeed Enterprise).
 
@@ -75,7 +75,7 @@ Cocok untuk proyek pribadi, belajar, dan server kecil–menengah.
 
 ### ⚠️ Kekurangan OpenLiteSpeed
 
-**1. 🔁 Konfigurasi .htaccess Tidak Dinamis**
+###**1. 🔁 Konfigurasi .htaccess Tidak Dinamis**
 
  Berbeda dari Apache, OpenLiteSpeed tidak membaca .htaccess secara real-time.
 
@@ -85,7 +85,7 @@ Artinya, setiap kali file .htaccess diubah, kamu harus reload server agar peruba
 
 ---
 
-**2. 🧩 Fitur Enterprise Tidak Tersedia**
+###**2. 🧩 Fitur Enterprise Tidak Tersedia**
 
 - Beberapa fitur hanya ada di LiteSpeed Enterprise, seperti:
 
@@ -100,7 +100,7 @@ Artinya, setiap kali file .htaccess diubah, kamu harus reload server agar peruba
 
 ---
 
-**3. ⚙️ Sedikit Lebih Rumit untuk Multi-Domain**
+###**3. ⚙️ Sedikit Lebih Rumit untuk Multi-Domain**
 
 Untuk hosting banyak domain atau akun (seperti cPanel/WHM), OLS kurang fleksibel dibanding versi Enterprise.
 
