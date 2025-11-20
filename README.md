@@ -353,6 +353,48 @@ berarti:
   - OLS membaca file PHP kamu dengan benar
   - Server berjalan normal
 
+---
+## **🛠️ Kendala yang Dialami**
+
+Dalam proses meng-upload dan mengganti file website di OpenLiteSpeed menggunakan WinSCP, terdapat satu kendala utama yang dirasakan, yaitu:
+
+- Masih ada beberapa perintah dan pengaturan yang fungsinya belum dipahami secara jelas.
+Contohnya seperti:
+
+- Perintah SFTP Server: sudo /usr/lib/openssh/sftp-server
+
+- Struktur direktori OLS seperti:
+_/usr/local/lsws/Example/html_
+
+- Perintah atau menu tertentu pada WinSCP yang belum familiar
+
+- Penempatan file (docroot) yang awalnya membingungkan
+
+
+Kendala ini membuat proses konfigurasi terasa ragu-ragu, karena tidak yakin apakah langkah tersebut benar atau tidak.
+
+
+---
+
+## **Solusi yang Diterapkan**
+
+Untuk mengatasi kendala tersebut, solusi yang dilakukan adalah:
+
+- Memperdalam pemahaman mengenai fungsi setiap perintah, direktori, dan pengaturan yang digunakan selama proses, termasuk:
+
+- Mempelajari tujuan perintah sudo dalam konteks SFTP
+
+- Memahami struktur folder OLS: mana yang berisi konfigurasi, mana yang berisi file website
+
+- Memahami fungsi masing-masing menu WinSCP
+
+- Membaca dokumentasi dan panduan sebelum menjalankan perintah
+
+- Bertanya saat menemukan langkah yang tidak jelas
+
+## **🎯 Kesimpulan**
+ 
+
   
 
 
