@@ -241,6 +241,20 @@ Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai por
 5. **Sekarang akses website di browser**: 👉             
 >-http://ip-server
 
+___
+## **G. Supaya index.php terbaca otomatis di OLS 📄**
+
+Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS, secara default yang bisa dibaca hanya index.html. Supaya website kita bisa menjalankan file index.php, kita perlu menambahkan sedikit pengaturan tambahan.
+
+1. **Login ke admin panel**: → http://ip-server:7080
+2. Menu kiri → Virtual Hosts → Example → General
+3. **Cari bagian Index Files**
+4. **Biasanya isinya**: index.html
+5. **Ubah jadi**: index.php, index.html
+6. **Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html**
+7. **Klik Save**
+
+
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
 • Name: lsphp84
