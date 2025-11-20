@@ -155,11 +155,12 @@ ___
 Karena OLS memakai repo tambahan, pastikan server bisa internet. Setelah itu jalankan:
 
 **1. Upgrade dan Update Sistem**
-
   >- apt update
   >- apt upgrade
+
 **2. Install utilitas penting**
   >- apt install wget curl 
+
 **3. Tambahkan repository OLS**
   >- wget -O - https://repo.litespeed.sh | bash 
 **4. Install OpenLiteSpeed**
