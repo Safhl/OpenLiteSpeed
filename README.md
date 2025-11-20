@@ -199,11 +199,11 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
 ### **Konfigurasi External App**
 
-1. Di menu kiri pilih: Server Configuration → External App
+1. **Di menu kiri pilih: Server Configuration → External App**
 
-2. Klik Add → pilih LiteSpeed SAPI App → Next
+2. **Klik Add → pilih LiteSpeed SAPI App → Next**
 
-3. Isi:
+3. **Isi:**
   - **Name: lsphp84**
   - **Address:** 
    >-uds://tmp/lshttpd/lsphp.sock
@@ -254,7 +254,7 @@ Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS
 6. **Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html**
 7. **Klik Save**
 
-
+___
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
 • Name: lsphp84
