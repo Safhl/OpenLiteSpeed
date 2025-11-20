@@ -204,7 +204,7 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 2. Klik Add → pilih LiteSpeed SAPI App → Next
 
 3. Isi:
-- Name: lsphp84
+   - Name: lsphp84
 - Address: uds://tmp/lshttpd/lsphp.sock
 - Notes: PHP 8.4
 - Max Connections: 35
