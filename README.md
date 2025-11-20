@@ -1,4 +1,4 @@
-# Kelebihan-dan-kekurangan-OLS
+# OpenLiteSpeed
 ## Kelebihan dan Kekurangan OLS
 
 ---
