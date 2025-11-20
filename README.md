@@ -192,9 +192,11 @@ Buka browser dan ketik:
 
 Kalau tampil halaman default, berarti instalasi berhasil.
 
-E. Mengatur Versi PHP di OLS
+___
+## **E. Mengatur Versi PHP di OLS**
 Untuk membuat OLS memakai PHP 8.4, lakukan pengaturan berikut:
-1. Konfigurasi External App
+
+**1. Konfigurasi External App**
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
 • Name: lsphp84
