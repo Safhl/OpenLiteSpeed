@@ -255,6 +255,33 @@ Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS
 7. **Klik Save**
 
 ___
+## **H. Membuat Self-Signed SSL 🔐**
+
+Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat SSL. Kali ini, kita akan membuat SSL self-signed, yaitu sertifikat buatan sendiri yang bisa digunakan untuk belajar atau pengujian di server lokal.
+
+### **Buat Sertifikat Self-Signed**
+1. Mmasuk sebagai root, lalu ketik:
+
+>-mkdir /etc/ssl/private
+>-cd /etc/ssl/private
+>-openssl req -x509 -newkey rsa:2048 -nodes 
+-keyout self.key -out self.crt -days 365
+
+Saat diminta mengisi data (Country, State, dst), boleh diisi asal atau tekan Enter saja.
+Jika proses berjalan normal, kita akan memiliki dua buah file yaitu self.key dan self.crt yang tersimpan di /etc/ssl/private
+Menambahkan SSL/TSL di OLS
+Login ke admin panel: → http://ip-server:7080
+Masuk menu: Listeners → Add → +
+Isi dengan:
+Listener Name: SSL
+IP Address: ANY
+Port: 443
+Secure: Yes
+Pada bagian Virtual Host Mappings, Tambahkan:
+Virtual Host: Example (atau nama virtual host kamu)
+Domains: * (artinya semua domain/IP)
+Save
+
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
 • Name: lsphp84
