@@ -345,5 +345,17 @@ Buka:
 
   >-http://IP-SERVER
 
+9. Verifikasi keberhasilan
+
+Jika tampilan web berubah menjadi tampilan web yang kamu upload,
+berarti:
+
+  - File berhasil di-upload
+  - File lama berhasil diganti
+  - OLS membaca file PHP kamu dengan benar
+  - Server berjalan normal
+
+  
+
 
 
