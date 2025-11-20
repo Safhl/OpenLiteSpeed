@@ -239,7 +239,7 @@ Secara default, OLS jalan di port 8088, sedangkan website pada umumnya pakai por
 3. **Ganti Port**: 80
 4. Klik Save → Graceful Restart
 5. **Sekarang akses website di browser**: 👉             
-  >-http://ip-server
+   >-http://ip-server
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
