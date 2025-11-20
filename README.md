@@ -220,6 +220,7 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 
 ### **Atur Script Handler**
 **1. Masih di menu kiri**: Server Configuration → Script Handler
+
 **2. Edit handler lsphp atau buat baru**:
   - Suffixes: php
   - Handler Type: LiteSpeed SAPI
