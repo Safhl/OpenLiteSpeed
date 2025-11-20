@@ -289,6 +289,11 @@ Save**
 5. Pada tab SSL → isi:
    - Private Key File: /etc/ssl/private/self.key
    - Certificate File: /etc/ssl/private/self.crt
+6. **Save → Graceful Restart**
+
+___
+## **I. Pengujian OLS 🚀**
+Jika semua langkah sudah berjalan dengan lancar, server kalian seharusnya sudah bisa diakses melalui _http://ip-server_ atau _https://ip-server_. Untuk mengubah tampilan halamannya, kalian bisa mengelola isi file yang ada di direktori **_/usr/local/lsws/Example/_**.
 
 Menu: Server Configuration → External App → Add → LiteSpeed SAPI App
 Isi seperti berikut:
