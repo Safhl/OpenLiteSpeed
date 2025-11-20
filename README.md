@@ -150,26 +150,26 @@ Sebelum mulai memasang OpenLiteSpeed, pastikan kamu sudah menyiapkan:
 - Repositori Debian sudah bisa digunakan untuk instalasi paket.
 - Coba akses server melalui SSH di CMD dan WinSCP, untuk memastikan konek ke server aman dan lancar.
 ___
-**B. Instalasi OpenLiteSpeed (OLS)**
+## **B. Instalasi OpenLiteSpeed (OLS)**
 
 Karena OLS memakai repo tambahan, pastikan server bisa internet. Setelah itu jalankan:
 
-1. Upgrade dan Update Sistem
+**1. Upgrade dan Update Sistem**
   >- apt update
   >- apt upgrade
-2. Install utilitas penting
+**2. Install utilitas penting**
   >- apt install wget curl 
-3. Tambahkan repository OLS
+**3. Tambahkan repository OLS**
   >- wget -O - https://repo.litespeed.sh | bash 
-4. Install OpenLiteSpeed
+**4. Install OpenLiteSpeed**
   >- apt install openlitespeed 
-5. Install PHP 8.4 + MySQL extension
+**5. Install PHP 8.4 + MySQL extension**
   >- apt install lsphp84 lsphp84-mysql 
-6. Jalankan dan aktifkan service OLS
+**6. Jalankan dan aktifkan service OLS**
   >- systemctl start lsws 
   >- systemctl enable lsws 
 ___
-**C. Membuat Password Panel Admin**
+## **C. Membuat Password Panel Admin**
 
 Untuk masuk ke panel konfigurasi OLS, kamu harus membuat username dan password:
 1. Jalankan script:
