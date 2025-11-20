@@ -255,7 +255,8 @@ Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS
 7. Klik Save
 
 ___
-## **H. Membuat Self-Signed SSL 🔐**
+## **H. Membuat Self-Signed 
+SSL 🔐**
 
 Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat SSL. Kali ini, kita akan membuat SSL self-signed, yaitu sertifikat buatan sendiri yang bisa digunakan untuk belajar atau pengujian di server lokal.
 
@@ -295,6 +296,7 @@ ___
 ## **I. Pengujian OLS 🚀**
 Jika semua langkah sudah berjalan dengan lancar, server kalian seharusnya sudah bisa diakses melalui _http://ip-server_ atau _https://ip-server_. Untuk mengubah tampilan halamannya, kalian bisa mengelola isi file yang ada di direktori **_/usr/local/lsws/Example/_**.
 ___
+
 
 
 
