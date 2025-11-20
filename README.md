@@ -340,14 +340,12 @@ index.php
 atau file PHP lain
 Masukkan semuanya ke folder html tersebut.
 
-8. Cek melalui browser
+10. Cek melalui browser
 Buka:
 
   >-http://IP-SERVER
 
-9. Verifikasi keberhasilan
-
-Jika tampilan web berubah menjadi tampilan web yang kamu upload,
+11. **Verifikasi keberhasilan**: Jika tampilan web berubah menjadi tampilan web yang kamu upload,
 berarti:
 
   - File berhasil di-upload
