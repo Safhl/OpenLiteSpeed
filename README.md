@@ -312,13 +312,38 @@ Edit file: **sudo nano /var/www/html/index.php**
 Karena login sebagai root tidak diizinkan, akun kahiang perlu dikonfigurasi untuk menjalankan tugas root melalui WinSCP. Ikuti langkah berikut:
 
 1. Buka WinSCP.
+
 2. Masukkan:
  - Host Name: Nama server (lihat tabel di atas).
-3. User: kahiang
-4. Password: Tanya ke KM.
+
+3. User: **kahiang.**
+
+4. Password: **Kahiang@123.**
+
 5. Klik Advanced → Environment → SFTP.
 Pada bagian SFTP Server, masukkan:
 **sudo /usr/lib/openssh/sftp-server**
+
+6. Klik OK, lalu klik Login.
+
+7. Masuk ke folder root website OLS
+  >-/usr/local/lsws/Example/html
+
+8. Hapus file bawaan OLS
+Dalam folder tersebut biasanya ada:
+index.html
+dan file default OLS lain.
+
+9. Upload file PHP kamu
+Drag & drop:
+index.php
+atau file PHP lain
+Masukkan semuanya ke folder html tersebut.
+
+8. Cek melalui browser
+Buka:
+
+  >-http://IP-SERVER
 
 
 
