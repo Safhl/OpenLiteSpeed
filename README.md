@@ -204,17 +204,17 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 2. **Klik Add → pilih LiteSpeed SAPI App → Next**
 
 3. Isi:
-  - Name: **lsphp84**
-  - Address: 
+   - Name: **lsphp84**
+   - Address: 
    >-uds://tmp/lshttpd/lsphp.sock
-  - Notes: **PHP 8.4**
-  - Max Connections: **35**
-  - Initial Request Timeout: **60**
-  - Retry Timeout: **0**
-  - Persistent Connection: **Yes**
-  - Command:
+   - Notes: **PHP 8.4**
+   - Max Connections: **35**
+   - Initial Request Timeout: **60**
+   - Retry Timeout: **0**
+   - Persistent Connection: **Yes**
+   - Command:
    >-/usr/local/lsws/lsphp84/bin/lsphp
-  - Instances: **1 (default)**
+   - Instances: **1 (default)**
 
   **Save -> _Graceful Restart_**
 
@@ -223,9 +223,9 @@ Untuk membuat OLS memakai PHP 8.4 Pastikah lsphp84 sudah terinstal, untuk meruba
 1. Masih di menu kiri: **Server Configuration → Script Handler**
 
 2. Edit handler lsphp atau buat baru:
-  - Suffixes: **php**
-  - Handler Type: **LiteSpeed SAPI**
-  - Handler Name: **lsphp84**
+   - Suffixes: **php**
+   - Handler Type: **LiteSpeed SAPI**
+   - Handler Name: **lsphp84**
 
 **Save → _Graceful Restart_**
 
