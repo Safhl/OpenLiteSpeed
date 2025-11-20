@@ -253,6 +253,9 @@ Biasanya, kita memakai file index.php sebagai halaman utama website. Tapi di OLS
 5. Ubah jadi: **index.php, index.html**
 6. Artinya OLS akan mencari index.php dulu,  kalau tidak ada baru index.html
 7. Klik Save
+8. Pada tab SSL → isi:
+   - Private Key File: /etc/ssl/private/self.key
+   - Certificate File: /etc/ssl/private/self.crt
 
 ___
 ## **H. Membuat Self-Signed SSL 🔐**
