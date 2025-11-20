@@ -141,7 +141,8 @@ Tapi panel seperti CyberPanel sudah mendukung OLS penuh dan gratis.
 - 🌐 Kompatibilitas	Baik dengan Apache	Tapi tidak sepenuhnya
 - 👥 Komunitas	Sedang berkembang	Tidak sebesar Nginx/Apache.
 
-### Tutorial Instalasi OpenLiteSpeed (OLS)
+___
+## Tutorial Instalasi OpenLiteSpeed (OLS)
 **A. Persiapan Server Debian**
 
 Sebelum mulai memasang OpenLiteSpeed, pastikan kamu sudah menyiapkan:
