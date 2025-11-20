@@ -297,6 +297,10 @@ ___
 Jika semua langkah sudah berjalan dengan lancar, server kalian seharusnya sudah bisa diakses melalui _http://ip-server_ atau _https://ip-server_. Untuk mengubah tampilan halamannya, kalian bisa mengelola isi file yang ada di direktori **_/usr/local/lsws/Example/_**.
 ___
 
+# **Cara Memindahkan/Upload Projek html Kedalam Server**
+
+p
+
 
 
 
