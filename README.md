@@ -263,7 +263,9 @@ Supaya website kita bisa diakses lewat https, kita perlu menambahkan sertifikat 
 1. Mmasuk sebagai root, lalu ketik:
 
 >-mkdir /etc/ssl/private
+
 >-cd /etc/ssl/private
+
 >-openssl req -x509 -newkey rsa:2048 -nodes 
 -keyout self.key -out self.crt -days 365
 
