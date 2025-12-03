@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cosmic Realms — Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0d0d0d;
+      --muted:#9aa6b2;
+      --neon-cyan:#5ee7ff;
+      --neon-purple:#9b7bff;
+      --accent: linear-gradient(90deg,var(--neon-cyan),var(--neon-purple));
+      --card-radius:16px;
+      --ease: cubic-bezier(.2,.9,.3,1);
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:#f0f5ff;overflow-x:hidden;}
+    canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
+    .wrap{max-width:980px;margin:0 auto;padding:28px;position:relative;z-index:1;}
+    h1,h2{margin:0;color:#f8fbff;font-family:Montserrat, sans-serif;}
+    h1{font-size:clamp(28px,5vw,48px);margin-bottom:12px;}
+    h2{font-size:22px;margin-bottom:16px;}
+    p{color:var(--muted);line-height:1.6;margin-bottom:20px;}
+    .form-group{margin-bottom:18px;}
+    label{display:block;margin-bottom:6px;font-weight:600;}
+    input, textarea{
+      width:100%;
+      padding:12px;
+      border-radius:12px;
+      border:none;
+      background:rgba(255,255,255,0.05);
+      color:#f0f5ff;
+      outline:none;
+      transition: 0.3s;
+    }
+    input:focus, textarea:focus{
+      box-shadow:0 0 12px var(--neon-cyan);
+      background: rgba(255,255,255,0.1);
+    }
+    input::placeholder, textarea::placeholder{color:var(--muted);}
+    textarea{resize:none;min-height:120px;}
+    .btn{
+      padding:12px 20px;border-radius:12px;border:0;cursor:pointer;font-weight:700;
+      background: linear-gradient(90deg,var(--neon-cyan),var(--neon-purple));
+      color:#071020;
+      box-shadow:0 8px 30px rgba(155,123,255,0.3);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 50px rgba(94,231,255,0.6),0 0 12px rgba(155,123,255,0.5);
+    }
+    .contact-info{display:flex;flex-direction:column;gap:14px;margin-top:32px;}
+    .contact-info a{
+      color:var(--neon-cyan);
+      text-decoration:none;
+      transition: 0.3s;
+    }
+    .contact-info a:hover{color:var(--neon-purple);text-shadow:0 0 8px var(--neon-cyan);}
+    .home-btn{
+      margin-top:28px;
+      display:inline-block;
+      background:transparent;
+      border:2px solid var(--neon-cyan);
+      color:var(--neon-cyan);
+      padding:10px 18px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition: 0.3s;
+    }
+    .home-btn:hover{
+      background:var(--neon-cyan);
+      color:#071020;
+      box-shadow:0 8px 30px rgba(94,231,255,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="wrap">
+  <h1>Hubungi Kami</h1>
+  <p>Apapun pertanyaan atau masukanmu tentang ARIO, SAJID, atau NAZWA,  
+     tim kami siap membantu dengan cepat dan informatif.</p>
+
+  <!-- Formulir kontak -->
+  <form action="mailto:info@cosmicrealms.id" method="post" enctype="text/plain">
+    <div class="form-group">
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="name" placeholder="Nama lengkapmu" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Pesan</label>
+      <textarea id="message" name="message" placeholder="Tulis pesanmu di sini..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Kirim Pesan</button>
+  </form>
+
+  <!-- Informasi kontak alternatif -->
+  <div class="contact-info">
+    <h2>Kontak Alternatif</h2>
+    <p>Email: <a href="mailto:info@cosmicrealms.id">info@cosmicrealms.id</a></p>
+    <p>Twitter: <a href="#">@CosmicRealms</a></p>
+    <p>GitHub: <a href="#">github.com/CosmicRealms</a></p>
+  </div>
+
+  <!-- Tombol kembali ke Home -->
+  <a href="index.html" class="home-btn">Kembali ke Home</a>
+</div>
+
+<script>
+  // Background particle sederhana
+  const canvas = document.getElementById('bgCanvas');
+  const ctx = canvas.getContext('2d');
+  let width = canvas.width = window.innerWidth;
+  let height = canvas.height = window.innerHeight;
+
+  const particles = [];
+  const particleCount = 80;
+
+  function random(min,max){return Math.random()*(max-min)+min;}
+
+  for(let i=0;i<particleCount;i++){
+    particles.push({
+      x: random(0,width),
+      y: random(0,height),
+      r: random(1,3),
+      dx: random(-0.5,0.5),
+      dy: random(-0.5,0.5)
+    });
+  }
+
+  function animate(){
+    ctx.clearRect(0,0,width,height);
+    for(let p of particles){
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle='rgba(94,231,255,0.6)';
+      ctx.fill();
+      p.x+=p.dx;
+      p.y+=p.dy;
+      if(p.x<0||p.x>width)p.dx*=-1;
+      if(p.y<0||p.y>height)p.dy*=-1;
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  window.addEventListener('resize',()=>{
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  });
+</script>
+
+</body>
+</html>

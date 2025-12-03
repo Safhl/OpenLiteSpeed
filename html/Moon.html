@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulan - Cosmic Realms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0d0d0d;
+      --muted:#9aa6b2;
+      --neon-cyan:#5ee7ff;
+      --neon-purple:#9b7bff;
+      --accent: linear-gradient(90deg,var(--neon-cyan),var(--neon-purple));
+      --card-radius:16px;
+      --glass-blur:12px;
+      --max-width:1200px;
+      --ease: cubic-bezier(.2,.9,.3,1);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#e6eef6; overflow-x:hidden;}
+
+    a{text-decoration:none;color:inherit;}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:28px;position:relative;}
+
+    /* HEADER */
+    header{
+      position:fixed; left:0; right:0; top:0; height:72px; display:flex; align-items:center; z-index:60;
+      padding:0 28px; backdrop-filter:blur(8px);
+      background: linear-gradient(180deg, rgba(13,13,13,0.55), rgba(8,8,10,0.25));
+      border-bottom:1px solid rgba(255,255,255,0.03);
+      transition: all .3s var(--ease);
+    }
+    .brand{font-family:Montserrat, Inter;font-weight:700;font-size:20px;color:transparent;background:var(--accent);-webkit-background-clip:text;background-clip:text;}
+    nav{margin-left:auto; display:flex; gap:18px;}
+    nav a{padding:8px 12px; border-radius:8px; font-weight:500; transition:0.18s; color:#cfe9ff;}
+    nav a:hover{background: rgba(255,255,255,0.02); transform:translateY(-2px);}
+
+    /* HERO with stars */
+    .hero{
+      height:100vh; display:grid; place-items:center; position:relative; overflow:hidden;
+      background: linear-gradient(180deg, rgba(5,6,10,0.8), rgba(5,6,10,0.95));
+    }
+    #starCanvas {position:absolute; inset:0; z-index:1;}
+    .hero-inner{position:relative; z-index:3; text-align:center; max-width:980px; padding:48px;}
+    .eyebrow{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg, rgba(94,231,255,0.06), rgba(155,123,255,0.04)); color:var(--neon-cyan); font-weight:600; font-size:13px; margin-bottom:20px;}
+    h1{font-family:Montserrat,Inter;font-size:clamp(28px,5.6vw,56px);color:#f8fbff;margin-bottom:12px;}
+    p.lead{color:var(--muted);font-size:18px;margin-bottom:24px;}
+    .cta-row{display:flex;gap:14px;justify-content:center;margin-top:12px;flex-wrap:wrap;}
+    .btn{padding:12px 24px;border-radius:12px;border:0;cursor:pointer;font-weight:700;background:var(--neon-cyan);color:#071020;box-shadow:0 8px 30px rgba(94,231,255,0.08);transition:0.18s;}
+    .btn.secondary{background:transparent;color:#cfe9ff;border:1px solid rgba(255,255,255,0.04);}
+    .btn.glow{background: linear-gradient(90deg,var(--neon-cyan),var(--neon-purple)); box-shadow:0 8px 30px rgba(155,123,255,0.12);}
+    .btn:hover{transform:translateY(-4px);}
+
+    /* PLANET SECTION */
+    #planet{
+      padding:80px 16px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; max-width:var(--max-width); margin:0 auto;
+    }
+    .planet-text h2{font-family:Montserrat;font-size:32px;background:var(--accent);-webkit-background-clip:text;color:transparent;margin-bottom:16px;}
+    .planet-text p{color:var(--muted); line-height:1.8;margin-bottom:12px; font-size:16px;}
+    .planet-figure{border-radius:24px; overflow:hidden; border:1px solid rgba(255,255,255,0.03); background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);}
+    .planet-figure img{width:100%; height:auto; display:block; transform:scale(1); transition:0.4s;}
+    .planet-figure img:hover{transform:scale(1.05);}
+
+    /* FACTS GRID */
+    .facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; margin-top:40px;}
+    .fact-card{background: rgba(255,255,255,0.02); padding:20px; border-radius:16px; backdrop-filter:blur(var(--glass-blur)); border:1px solid rgba(255,255,255,0.03); transition:0.3s;}
+    .fact-card:hover{transform:translateY(-4px); box-shadow:0 8px 30px rgba(94,231,255,0.08);}
+    .fact-card h4{color:var(--neon-cyan); margin-bottom:6px; font-size:16px;}
+    .fact-card p{color:var(--muted); font-size:14px; line-height:1.6;}
+
+    /* FOOTER */
+    footer{padding:48px 16px; margin-top:60px; color:var(--muted); background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.02));}
+    .footer-inner{max-width:var(--max-width); margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;}
+    .footer-inner a{color:var(--muted); font-weight:500; transition:0.2s;}
+    .footer-inner a:hover{color:var(--neon-cyan);}
+
+    @media(max-width:900px){#planet{grid-template-columns:1fr;} .facts{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.facts{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">Cosmic Realms</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Earth.html">ARIO</a>
+      <a href="Moon.html" style="color:var(--neon-cyan)">SAJID</a>
+      <a href="Milky Way.html">NAZWA</a>
+      <a href="learn-more.html" >Learn More</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="starCanvas"></canvas>
+    <div class="hero-inner">
+      <span class="eyebrow">SATELLITE PROFILE</span>
+      <h1>Moon: Earth'S Natural Satellite</h1>
+      <p class="lead">Menyelami keunikan Bulan, orbit, permukaan, kawah, dan pengaruhnya terhadap Bumi, termasuk pasang surut laut yang menakjubkan.</p>
+      <div class="cta-row">
+        <a href="#planet" class="btn glow">Explore Bulan</a>
+        <a href="index.html" class="btn secondary">Back</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANET SECTION -->
+  <section id="planet">
+    <div class="planet-text">
+      <h2>Bulan</h2>
+      <p>Aku orang yang menikmati hal-hal sederhana dalam hidup. Rebah di kasur dengan wifi yang lancar sambil main game adalah cara favoritku untuk bersantai dan melepas penat. Hidupku kadang terlihat santai, tapi aku percaya kualitas waktu istirahat itu penting.</p>
+      <p>Selain itu, game memberiku tantangan dan hiburan sekaligus. Aku suka memecahkan strategi, belajar dari kesalahan, dan kadang tertawa sendiri ketika hal-hal konyol terjadi di permainan. Game bagiku bukan sekadar hobi, tapi juga cara untuk tetap kreatif dan berpikir cepat.</p>
+      <p>Di keseharian, aku mencoba menemukan keseimbangan antara istirahat dan aktivitas lain. Meskipun tampak santai, aku selalu berusaha menjaga energi dan mood supaya tetap positif. Kadang, hal-hal kecil seperti kasur empuk dan koneksi wifi yang lancar bisa membuat hari terasa sempurna.</p>
+    </div>
+    <div class="planet-figure">
+      <img src="gambar 1/S.jpeg" alt="Bulan">
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 Cosmic Realms</div>
+      <div>
+        <a href="https://twitter.com/" target="_blank">Twitter</a> | 
+        <a href="https://instagram.com/" target="_blank">Instagram</a> | 
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STAR CANVAS SCRIPT -->
+  <script>
+    const canvas = document.getElementById('starCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let W = canvas.width = window.innerWidth;
+    let H = canvas.height = window.innerHeight;
+
+    let stars = [];
+    const STAR_COUNT = 200;
+
+    function initStars(){
+      stars = [];
+      for(let i=0;i<STAR_COUNT;i++){
+        stars.push({
+          x: Math.random()*W,
+          y: Math.random()*H,
+          r: Math.random()*1.5 + 0.5,
+          alpha: Math.random(),
+          delta: Math.random()*0.02+0.005
+        });
+      }
+    }
+
+    initStars();
+
+    function resize(){
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      initStars();
+    }
+    window.addEventListener('resize', resize);
+
+    function drawStars(){
+      ctx.clearRect(0,0,W,H);
+      for(let s of stars){
+        ctx.beginPath();
+        ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+        ctx.fillStyle = `rgba(255,255,255,${s.alpha})`;
+        ctx.fill();
+        s.alpha += s.delta;
+        if(s.alpha>1 || s.alpha<0.1) s.delta*=-1;
+      }
+      requestAnimationFrame(drawStars);
+    }
+
+    drawStars();
+  </script>
+</body>
+</html>
