@@ -414,4 +414,6 @@ Secara keseluruhan, kegiatan ini memberikan pemahaman yang lebih baik mengenai:
 Dengan pengalaman ini, diharapkan pengelolaan server ke depannya dapat dilakukan dengan lebih percaya diri, terarah, dan efisien.
 
   
-## **VIDEO INSTALASI OpenLiteSpeed** ##
+## **Video Instalasi OpenLiteSpeed** ##
+
+https://youtu.be/jrqhyRV9oGs?si=egpnG_q28-6jNCUF
